@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
 
-
 export default class PuzzleContainer extends Component {
     constructor(param) {
         super();
-        this.collection = param.item.map(n => GetItem(n));
+        this.collection = param.item.map((n , i) => GetItem(n , i));
     }
 
     render() {
-        return (<ul>{this.collection}</ul>);
+        return <ul>{this.collection}</ul>;
     }
 }
 
-function GetItem(index) {
-    return <li key={index} className={index} >
-        <span>{index}</span>
+function GetItem(value , index) {
+    return <li key={index} className={value} >
+        <span>{value}</span>
     </li>;
 };
 
