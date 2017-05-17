@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
 export default class PuzzleContainer extends Component {
-    constructor(param) {
+    constructor(props) {
         super();
-        this.collection = param.item.map((n , i) => GetItem(n , i));
+        this.collection = props.item.map((n , i) => GetItem(n , i));
     }
 
     render() {

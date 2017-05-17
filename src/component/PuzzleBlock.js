@@ -23,7 +23,7 @@ class PuzzleBlock extends Component {
         this.updateClick()
         
         console.log('position : ' + this.state.position +
-            ' clicked : ' + this.state.clicked +
+            // ' clicked : ' + this.state.clicked +
             ' value: ' + this.props.value)
     }
 
