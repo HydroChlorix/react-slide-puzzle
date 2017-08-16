@@ -2,7 +2,7 @@
   "name": "react-slide-puzzle",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://github.com/HydroChlorix/react-slide-puzzle",
+  "homepage": "https://hydrochlorix.github.io/react-slide-puzzle",
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
@@ -16,6 +16,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy" : "npm run build&&gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
